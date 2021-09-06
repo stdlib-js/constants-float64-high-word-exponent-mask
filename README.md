@@ -103,6 +103,22 @@ out = hi | FLOAT64_HIGH_WORD_EXPONENT_MASK; // => 0 11111111111 0111000000000000
 
 <!-- /.examples -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/constants/float64/high-word-significand-mask`][@stdlib/constants/float64/high-word-significand-mask]: high word mask for the significand of a double-precision floating-point number.
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 
 <section class="main-repo" >
 
@@ -159,6 +175,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/constants-float64-high-word-exponent-mask/main/LICENSE
 
 [ieee754]: http://en.wikipedia.org/wiki/IEEE_754-1985
+
+<!-- <related-links> -->
+
+[@stdlib/constants/float64/high-word-significand-mask]: https://github.com/stdlib-js/constants-float64-high-word-significand-mask
+
+<!-- </related-links> -->
 
 </section>
 
