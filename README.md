@@ -20,7 +20,7 @@ limitations under the License.
 
 # Exponent Mask
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > High word mask for the exponent of a [double-precision floating-point number][ieee754].
 
@@ -111,7 +111,7 @@ out = hi | FLOAT64_HIGH_WORD_EXPONENT_MASK; // => 0 11111111111 0111000000000000
 
 ## See Also
 
--   [`@stdlib/constants/float64/high-word-significand-mask`][@stdlib/constants/float64/high-word-significand-mask]: high word mask for the significand of a double-precision floating-point number.
+-   <span class="package-name">[`@stdlib/constants/float64/high-word-significand-mask`][@stdlib/constants/float64/high-word-significand-mask]</span><span class="delimiter">: </span><span class="description">high word mask for the significand of a double-precision floating-point number.</span>
 
 </section>
 
@@ -162,8 +162,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/constants-float64-high-word-exponent-mask/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/constants-float64-high-word-exponent-mask?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/constants-float64-high-word-exponent-mask.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/constants-float64-high-word-exponent-mask/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
