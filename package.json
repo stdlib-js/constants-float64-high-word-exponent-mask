@@ -1,0 +1,38 @@
+{
+  "name": "@stdlib/constants-float64-high-word-exponent-mask",
+  "version": "0.0.0",
+  "description": "High word mask for the exponent of a double-precision floating-point number.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/constants-float64-high-word-exponent-mask.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "constant",
+    "const",
+    "mathematics",
+    "math",
+    "float",
+    "float64",
+    "64bit",
+    "floating-point",
+    "ieee754",
+    "mask",
+    "exponent",
+    "bits",
+    "high",
+    "word"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
