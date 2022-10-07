@@ -24,23 +24,7 @@ limitations under the License.
 
 > High word mask for the exponent of a [double-precision floating-point number][ieee754].
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/constants-float64-high-word-exponent-mask
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
@@ -48,8 +32,32 @@ The [branches.md][branches-url] file summarizes the available branches and displ
 
 <!-- eslint-disable id-length -->
 
+To use in Observable,
+
 ```javascript
-var FLOAT64_HIGH_WORD_EXPONENT_MASK = require( '@stdlib/constants-float64-high-word-exponent-mask' );
+FLOAT64_HIGH_WORD_EXPONENT_MASK = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-high-word-exponent-mask@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var FLOAT64_HIGH_WORD_EXPONENT_MASK = require( 'path/to/vendor/umd/constants-float64-high-word-exponent-mask/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-high-word-exponent-mask@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.FLOAT64_HIGH_WORD_EXPONENT_MASK;
+})();
+</script>
 ```
 
 #### FLOAT64_HIGH_WORD_EXPONENT_MASK
@@ -86,9 +94,14 @@ var bool = ( FLOAT64_HIGH_WORD_EXPONENT_MASK === 0x7ff00000 );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var getHighWord = require( '@stdlib/number-float64-base-get-high-word' );
-var FLOAT64_HIGH_WORD_EXPONENT_MASK = require( '@stdlib/constants-float64-high-word-exponent-mask' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-get-high-word@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-high-word-exponent-mask@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var x = 11.5;
 var hi = getHighWord( x ); // => 0 10000000010 01110000000000000000
@@ -101,6 +114,11 @@ var out = hi & FLOAT64_HIGH_WORD_EXPONENT_MASK; // => 0 10000000010 000000000000
 // Mask on the exponent bits and leave other bits unchanged:
 out = hi | FLOAT64_HIGH_WORD_EXPONENT_MASK; // => 0 11111111111 01110000000000000000
 // returns 2146893824
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -194,7 +212,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/constants/float64/high-word-significand-mask]: https://github.com/stdlib-js/constants-float64-high-word-significand-mask
+[@stdlib/constants/float64/high-word-significand-mask]: https://github.com/stdlib-js/constants-float64-high-word-significand-mask/tree/umd
 
 <!-- </related-links> -->
 
