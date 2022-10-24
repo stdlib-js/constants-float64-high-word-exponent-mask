@@ -24,7 +24,23 @@ limitations under the License.
 
 > High word mask for the exponent of a [double-precision floating-point number][ieee754].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/constants-float64-high-word-exponent-mask
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
@@ -33,7 +49,7 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
-import FLOAT64_HIGH_WORD_EXPONENT_MASK from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-high-word-exponent-mask@deno/mod.js';
+var FLOAT64_HIGH_WORD_EXPONENT_MASK = require( '@stdlib/constants-float64-high-word-exponent-mask' );
 ```
 
 #### FLOAT64_HIGH_WORD_EXPONENT_MASK
@@ -71,8 +87,8 @@ var bool = ( FLOAT64_HIGH_WORD_EXPONENT_MASK === 0x7ff00000 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import getHighWord from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-get-high-word@deno/mod.js';
-import FLOAT64_HIGH_WORD_EXPONENT_MASK from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-high-word-exponent-mask@deno/mod.js';
+var getHighWord = require( '@stdlib/number-float64-base-get-high-word' );
+var FLOAT64_HIGH_WORD_EXPONENT_MASK = require( '@stdlib/constants-float64-high-word-exponent-mask' );
 
 var x = 11.5;
 var hi = getHighWord( x ); // => 0 10000000010 01110000000000000000
@@ -114,7 +130,7 @@ out = hi | FLOAT64_HIGH_WORD_EXPONENT_MASK; // => 0 11111111111 0111000000000000
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -174,11 +190,11 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/constants-float64-high-word-exponent-mask/main/LICENSE
 
-[ieee754]: http://en.wikipedia.org/wiki/IEEE_754-1985
+[ieee754]: https://en.wikipedia.org/wiki/IEEE_754-1985
 
 <!-- <related-links> -->
 
-[@stdlib/constants/float64/high-word-significand-mask]: https://github.com/stdlib-js/constants-float64-high-word-significand-mask/tree/deno
+[@stdlib/constants/float64/high-word-significand-mask]: https://github.com/stdlib-js/constants-float64-high-word-significand-mask
 
 <!-- </related-links> -->
 
