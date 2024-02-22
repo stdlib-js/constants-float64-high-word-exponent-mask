@@ -44,6 +44,11 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
+import FLOAT64_HIGH_WORD_EXPONENT_MASK from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-high-word-exponent-mask@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/constants-float64-high-word-exponent-mask/tags). For example,
+
+```javascript
 import FLOAT64_HIGH_WORD_EXPONENT_MASK from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-high-word-exponent-mask@v0.2.1-esm/index.mjs';
 ```
 
@@ -88,7 +93,7 @@ var bool = ( FLOAT64_HIGH_WORD_EXPONENT_MASK === 0x7ff00000 );
 <script type="module">
 
 import getHighWord from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-get-high-word@esm/index.mjs';
-import FLOAT64_HIGH_WORD_EXPONENT_MASK from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-high-word-exponent-mask@v0.2.1-esm/index.mjs';
+import FLOAT64_HIGH_WORD_EXPONENT_MASK from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-high-word-exponent-mask@esm/index.mjs';
 
 var x = 11.5;
 var hi = getHighWord( x ); // 0 10000000010 01110000000000000000
