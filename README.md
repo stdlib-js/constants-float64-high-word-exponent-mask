@@ -183,6 +183,8 @@ Macro for the high word mask for the exponent of a [double-precision floating-po
 ## See Also
 
 -   <span class="package-name">[`@stdlib/constants-float64/high-word-significand-mask`][@stdlib/constants/float64/high-word-significand-mask]</span><span class="delimiter">: </span><span class="description">high word mask for the significand of a double-precision floating-point number.</span>
+-   <span class="package-name">[`@stdlib/constants-float64/high-word-sign-mask`][@stdlib/constants/float64/high-word-sign-mask]</span><span class="delimiter">: </span><span class="description">high word mask for the sign bit of a double-precision floating-point number.</span>
+-   <span class="package-name">[`@stdlib/constants-float64/high-word-abs-mask`][@stdlib/constants/float64/high-word-abs-mask]</span><span class="delimiter">: </span><span class="description">high word mask for excluding the sign bit of a double-precision floating-point number.</span>
 
 </section>
 
@@ -265,6 +267,10 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 <!-- <related-links> -->
 
 [@stdlib/constants/float64/high-word-significand-mask]: https://github.com/stdlib-js/constants-float64-high-word-significand-mask
+
+[@stdlib/constants/float64/high-word-sign-mask]: https://github.com/stdlib-js/constants-float64-high-word-sign-mask
+
+[@stdlib/constants/float64/high-word-abs-mask]: https://github.com/stdlib-js/constants-float64-high-word-abs-mask
 
 <!-- </related-links> -->
 
